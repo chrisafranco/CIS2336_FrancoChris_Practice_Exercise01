@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Task 1
+
+      Student Name: Christopher Franco
+      Date: 0/9/27/2026
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Financial Planning Tips</title>
+   <style>
+      :root {
+         --ink: #172b24;
+         --muted: #5f716a;
+         --paper: #fffdf7;
+         --accent: #d96c3b;
+         --accent-dark: #a84a26;
+         --line: #e4ded1;
+      }
+
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         min-height: 100vh;
+         margin: 0;
+         padding: 48px 20px;
+         color: var(--ink);
+         font-family: Georgia, "Times New Roman", serif;
+         background: #dce9df;
+         background-image: linear-gradient(135deg, #dce9df 0%, #f6e6cf 100%);
+      }
+
+      article {
+         width: min(100%, 620px);
+         margin: 0 auto;
+         padding: 42px clamp(24px, 6vw, 58px) 48px;
+         background-color: var(--paper);
+         border-top: 8px solid var(--accent);
+         box-shadow: 0 18px 40px rgba(23, 43, 36, 0.16);
+      }
+
+      h2 {
+         margin: 0 0 32px;
+         color: var(--accent-dark);
+         font-family: "Trebuchet MS", Arial, sans-serif;
+         font-size: clamp(0.8rem, 2vw, 0.95rem);
+         font-weight: bold;
+         letter-spacing: 0.12em;
+         text-align: left;
+         text-transform: uppercase;
+      }
+
+      h3 {
+         margin: 0;
+         padding-bottom: 16px;
+         border-bottom: 1px solid var(--line);
+         font-size: clamp(1.8rem, 5vw, 2.6rem);
+         line-height: 1.08;
+      }
+
+      ol {
+         margin: 26px 0 0;
+         padding: 0;
+         list-style: none;
+         counter-reset: tips;
+      }
+
+      li {
+         display: grid;
+         grid-template-columns: 42px 1fr;
+         gap: 14px;
+         align-items: start;
+         padding: 18px 0;
+         border-bottom: 1px solid var(--line);
+         color: var(--muted);
+         font-size: 1.05rem;
+         line-height: 1.6;
+         counter-increment: tips;
+      }
+
+      li::before {
+         content: counter(tips, decimal-leading-zero);
+         color: var(--accent);
+         font-family: "Trebuchet MS", Arial, sans-serif;
+         font-size: 0.85rem;
+         font-weight: bold;
+         letter-spacing: 0.08em;
+         padding-top: 4px;
+      }
+
+      li:last-child {
+         border-bottom: 0;
+      }
+
+      @media (max-width: 480px) {
+         body {
+            padding: 24px 14px;
+         }
+
+         article {
+            padding-top: 30px;
+            padding-bottom: 30px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <article>
+      <h2>Hands-on Project 1-1</h2>
+      <!-- Add your script tags and code here -->
+
+      <script>
+        // create ordered list
+            document.write("<h3>Financial Planning Tips</h3>");
+            document.write("<ol>");
+            document.write("<li>Reduce spending on non-necessities.</li>");
+            document.write("<li>Use extra money to pay off debt, starting with the highest-interest credit cards.</li>");
+            document.write("<li>Continue paying off debts until you are debt-free.</li>");
+            document.write("<li>Put a fixed percent of your pay aside every payday.</li>");
+            document.write("</ol>");
+     </script>
+   </article>
+</body>
+</html>
